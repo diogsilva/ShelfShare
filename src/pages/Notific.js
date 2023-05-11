@@ -1,5 +1,3 @@
-
-import React from "react";
 import {Container,Row,Col} from "react-bootstrap";
 import { Button } from '@mui/material';
 import {Link } from "react-router-dom";
@@ -7,15 +5,15 @@ import './Notific.css';
 
 
 // Home Screen
-const Messages = (props) => {
+const Notific = (props) => {
 
   return (
     <div className='body'>
       <Container className="header" style={{textAlign:"center"}}>
         <Row>
           
-          <Col><Link to= '/Messages'style={{textDecoration:'none'}}><Button><b className='button_' >Messages    </b></Button></Link></Col>
-          <Col><Link to= "/Notific"style={{textDecoration:'none'}}><Button><b className='button_l'>Notifications</b></Button></Link></Col>
+          <Col><Link  to="/Messages" style={{textDecoration:'none'}}><Button><b className='button_l'>Messages</b></Button></Link></Col>
+          <Col><Button><b className='button_'>Notifications</b></Button></Col>
         </Row>
       </Container>
       <Container className='Msg_containers'>
@@ -83,4 +81,4 @@ const Messages = (props) => {
   )
 };
 
-export default Messages;
+export default  Notific;

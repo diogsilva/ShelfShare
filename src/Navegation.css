@@ -7,10 +7,9 @@
     cursor : pointer
 }
 .bottom-navbar{
-    background-color: #F9BB78 ;   
+    background-color: #fabe70 ;   
+}
+.nav-link{
+    color:black;
 }
 
-.navbar-brand{
-    color: aliceblue;
-    
-}

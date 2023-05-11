@@ -3,12 +3,12 @@ import './Navegation.css';
 import { Nav, NavItem} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faHome, faUserCircle, faCake, faUmbrella, faAdd, faCommenting } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faHome, faUserCircle, faAdd, faCommenting } from '@fortawesome/free-solid-svg-icons';
 // esta parte é para quando o site for aberto em tablet ou telemovel parecer uma app
 // faz o upload dos icons do menu
 const tabs = [{
   route: "/home",
-  icon: faCake,
+  icon: faHome,
   label: "cake_home"
 },{
   route: "/search",
@@ -35,29 +35,29 @@ const Navigation = (props) => {
       {/* -----------       TOP NavBar      ----------*/}
       <nav className="navbar navbar-expand-md navbar-light d-none d-lg-block sticky-top" role="navigation">
         <div className="container-fluid">
-            <a className="navbar-brand" href="/home">Shelf Share</a>
+            <a className="navbar-brand" href="/home" style={{color:'white'}}><h4>Shelf Share</h4></a>
             <Nav className="ml-auto">
               <NavItem>
-                <NavLink to="/search" className="nav-link">
-                  Search 
+                <NavLink to="/search" className="nav-link" style={{color:'white'}}>
+                  <b>Search </b>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/sell" className="nav-link">
-                  Sell
+                <NavLink to="/sell" className="nav-link"style={{color:'white'}}>
+                <b>Sell</b>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/messages" className="nav-link">
-                  Massages 
+                <NavLink to="/messages" className="nav-link"style={{color:'white'}}>
+                <b>Massages </b>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/profile" className="nav-link">
-                  Profile
+                <NavLink to="/profile" className="nav-link"style={{color:'white'}}>
+                <b>Profile</b>
                 </NavLink>
               </NavItem>
-              <button className="button-login" > Login </button>
+             {/* <button className="button-login" > Login </button>*/}
              
               
             </Nav>

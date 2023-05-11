@@ -1,14 +1,19 @@
-
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+  
+}
 
 .navbar {
-  border-bottom: solid 2px #1a1818;
-  border-top: solid 1px black;
-  background-color: #F9BB78 ;
+  border-bottom: solid 2px #fabe70;
+  /*border-top: solid 1px black;*/
+  background-color: #fabe70 ;
 }
 
-.bottom-tab-nav {
+/*.bottom-tab-nav {
   border-top: solid 2px #141414;
-}
+}*/
 
 .nav-link,
 .bottom-nav-link {
