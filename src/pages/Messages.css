@@ -1,0 +1,41 @@
+.body{
+    background:bisque;
+}
+.header{
+    padding: 1%;
+}
+.button_{
+    background-color: bisque;
+    padding: 3%;
+    color :black;
+    cursor : pointer;
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+.button_l{
+    background-color: bisque;
+    padding: 3%;
+    color :black;
+    cursor : pointer;
+    border: none;
+    
+}
+.Msg_containers{
+    background-color: bisque;
+    border: none;
+    padding-top: 1% ;
+    padding-bottom: 2%;
+}
+
+.name_user{
+    padding-top: 3%;
+    font-size:smaller;
+}
+.mens{
+    font-size: x-small;
+}
+.when_sended{
+    text-align: right;
+    font-size: x-small;
+}

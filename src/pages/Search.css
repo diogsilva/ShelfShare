@@ -1,0 +1,22 @@
+
+.line-break {
+    white-space: pre-line;
+  }
+
+.Search-options{
+    background-color: bisque;
+    padding-top: 5%;
+    
+   
+
+}
+.container-fluid{
+    background-color: #F9BB78 ;  
+}
+.mt{
+    padding-top: 3%;
+    background-color: bisque;
+}
+.Search_a{
+    background-color:   bisque;
+}

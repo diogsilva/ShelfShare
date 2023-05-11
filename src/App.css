@@ -1,0 +1,29 @@
+
+
+.navbar {
+  border-bottom: solid 2px #1a1818;
+  border-top: solid 1px black;
+  background-color: #F9BB78 ;
+}
+
+.bottom-tab-nav {
+  border-top: solid 2px #141414;
+}
+
+.nav-link,
+.bottom-nav-link {
+  color: #5b5a55;
+}
+
+.bottom-nav-link.active {
+  color: #922c88;
+}
+
+.bottom-tab-label {
+  font-size: 12px;
+}
+
+
+
+
+
