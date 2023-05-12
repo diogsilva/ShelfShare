@@ -1,6 +1,31 @@
 import React from 'react';
 import "./Home.css";
 import {Form,FormControl,InputGroup,Container,Row,Col} from "react-bootstrap"
+import { Grid } from "@mui/material"
+import BookShelf from '../Components/BookShelf.js';
+
+var bookData = [
+  {
+    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
+    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
+  },
+  {
+    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
+    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
+  },
+  {
+    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
+    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
+  },
+  {
+    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
+    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
+  },
+  {
+    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
+    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
+  },
+];
 
 // Home Screen
 const Home = (props) => {
@@ -9,7 +34,7 @@ const Home = (props) => {
     <div className='comp'>
       <Container className="mt" >
       <Row>
-          <Col >
+          <Col>
             <Form className="d">
               <InputGroup>
                 <InputGroup.Text className="bg-white">
@@ -31,13 +56,28 @@ const Home = (props) => {
                   </svg>
                 </InputGroup.Text>
                 <FormControl type="search" className="me-4" placeholder="Search" />
-              </InputGroup>  
+              </InputGroup>
             </Form>
           </Col>
         </Row>
       </Container>
       <Container className='grid'>
-        <p>BOOKS RECOMENDED TO YOU:</p>
+        <Row>
+          <p class="section-header">BOOKS RECOMENDED TO YOU:</p>
+          <Col>
+            <div /* style={{width: 400, overflow: "scroll"}} */>
+              <Grid item direction="row" spacing={2} xs={2}>
+                <BookShelf books={bookData} />
+              </Grid>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          </Col>
+        </Row>
+
+        <p className="section-header">FAVORITE BOOKS IN SHOWCASE:</p>
         <Row>
           <Col>
           </Col>
@@ -47,17 +87,7 @@ const Home = (props) => {
           </Col>
         </Row>
 
-        <p>FAVORITE BOOKS IN SHOWCASE:</p>
-        <Row>
-          <Col>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-          </Col>
-        </Row>
-
-        <p>TRADES THAT YOU MIGHT LIKE:</p>
+        <p className="section-header">TRADES THAT YOU MIGHT LIKE:</p>
         <Row>
           <Col>
           </Col>
@@ -74,3 +104,4 @@ const Home = (props) => {
 };
 
 export default Home;
+
