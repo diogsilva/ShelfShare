@@ -11,10 +11,11 @@ class BookShelfItem extends React.Component
 
     render()
     {
+        console.log("BookShelf Item props:", this.props);
         return(
             <div>
-                <img src={this.props.bookCoverImgUrl} />
-                <p>{this.props.bookTitle}</p>
+                <img src={this.props.coverImg} />
+                <p>{this.props.title}</p>
             </div>
         );
     }
@@ -31,11 +32,12 @@ class BookShelf extends React.Component
     {
         console.log("BookShelf props:", this.props)
         return (
-            this.props.books.forEach(book => {
+            //<BookShelfItem bookCoverImgUrl={this.props.books[0].coverImg} bookTitle={this.props.books[0].title} />
+            this.props.books.map((book) => (
                 <div>
-                    <BookShelfItem bookCoverImgUrl={book.coverImg} bookTitle={book.title} />
+                    <BookShelfItem coverImg={book.coverImg} title={book.title} />
                 </div>
-            })
+            ))
         );
     }
 }
