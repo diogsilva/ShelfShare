@@ -63,7 +63,7 @@ const Home = (props) => {
       </Container>
       <Container className='grid'>
         <Row>
-          <p class="section-header">BOOKS RECOMENDED TO YOU:</p>
+          <p className="section-header">BOOKS RECOMENDED TO YOU:</p>
           <Col>
             <div /* style={{width: 400, overflow: "scroll"}} */>
               <Grid item direction="row" spacing={2} xs={2}>
