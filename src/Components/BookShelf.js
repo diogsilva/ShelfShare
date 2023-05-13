@@ -35,7 +35,7 @@ class BookShelf extends React.Component
             //<BookShelfItem bookCoverImgUrl={this.props.books[0].coverImg} bookTitle={this.props.books[0].title} />
             this.props.books.map((book) => (
                 <div>
-                    <BookShelfItem coverImg={book.coverImg} title={book.title} />
+                    <BookShelfItem coverImg={"/img/livros/" + book.imageLink} title={book.title} />
                 </div>
             ))
         );

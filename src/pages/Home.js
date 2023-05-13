@@ -4,28 +4,7 @@ import {Form,FormControl,InputGroup,Container,Row,Col} from "react-bootstrap"
 import { Grid } from "@mui/material"
 import BookShelf from '../Components/BookShelf.js';
 
-var bookData = [
-  {
-    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
-    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
-  },
-  {
-    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
-    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
-  },
-  {
-    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
-    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
-  },
-  {
-    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
-    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
-  },
-  {
-    title: "Livres de Obedecer: a gestão, do nazismo aos dias de hoje",
-    coverImg: "https://cdn.shopify.com/s/files/1/1828/7185/products/2023_livresdeobedecer_2048x2048.jpg?v=1680260228"
-  },
-];
+const bookData = require("../sample/books.json");
 
 // Home Screen
 const Home = (props) => {
