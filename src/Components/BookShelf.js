@@ -1,4 +1,5 @@
 import React from 'react';
+import { Stack } from '@mui/material'
 
 // Um componente que implementa a "prateleira de livros" na página principal
 
@@ -11,7 +12,7 @@ class BookShelfItem extends React.Component
 
     render()
     {
-        console.log("BookShelf Item props:", this.props);
+        //console.log("BookShelf Item props:", this.props);
         return(
             <div>
                 <img src={this.props.coverImg} />
@@ -30,14 +31,15 @@ class BookShelf extends React.Component
 
     render()
     {
-        console.log("BookShelf props:", this.props)
+        //console.log("BookShelf props:", this.props)
         return (
-            //<BookShelfItem bookCoverImgUrl={this.props.books[0].coverImg} bookTitle={this.props.books[0].title} />
-            this.props.books.map((book) => (
-                <div>
-                    <BookShelfItem coverImg={"/img/livros/" + book.imageLink} title={book.title} />
-                </div>
-            ))
+            <Stack direction="horizontal" style={{overflow: "scroll"}}>
+                { this.props.books.map((book) => (
+                    <div>
+                        <BookShelfItem key={book.imageLink} coverImg={"/img/livros/" + book.imageLink} title={book.title} />
+                    </div>
+                ))}
+            </Stack>
         );
     }
 }
