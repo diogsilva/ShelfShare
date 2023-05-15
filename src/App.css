@@ -32,3 +32,13 @@ html, body {
 .bottom-tab-label {
   font-size: 12px;
 }
+
+.section-header {
+  font-family: 'Poppins';
+  text-transform: uppercase;
+}
+
+.section-body {
+  background-color: #D9D9D9;
+  border-radius: 25px;
+}

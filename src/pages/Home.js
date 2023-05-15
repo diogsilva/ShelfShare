@@ -44,10 +44,8 @@ const Home = (props) => {
         <Row>
           <p className="section-header">BOOKS RECOMENDED TO YOU:</p>
           <Col>
-            <div /* style={{width: 400, overflow: "scroll"}} */>
-              <Grid item direction="row" spacing={2} xs={2}>
+            <div className="section-body">
                 <BookShelf books={bookData} />
-              </Grid>
             </div>
           </Col>
         </Row>
