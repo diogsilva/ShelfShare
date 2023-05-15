@@ -5,11 +5,6 @@ import { Stack } from '@mui/material'
 
 class BookShelfItem extends React.Component
 {
-    constructor(props) 
-    {
-        super(props);
-    }
-
     render()
     {
         //console.log("BookShelf Item props:", this.props);
@@ -24,11 +19,6 @@ class BookShelfItem extends React.Component
 
 class BookShelf extends React.Component
 {
-    constructor(props) 
-    {
-        super(props);
-    }
-
     render()
     {
         //console.log("BookShelf props:", this.props)
