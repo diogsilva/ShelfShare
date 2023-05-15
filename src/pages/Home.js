@@ -45,7 +45,7 @@ const Home = (props) => {
           <p className="section-header">BOOKS RECOMENDED TO YOU:</p>
           <Col>
             <div className="section-body">
-                <BookShelf books={bookData} />
+                <BookShelf books={bookData} picHeight={350}/>
             </div>
           </Col>
         </Row>
