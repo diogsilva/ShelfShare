@@ -14,10 +14,10 @@ class BookShelfItem extends React.Component
     {
         //console.log("BookShelf Item props:", this.props);
         return(
-            <div>
+            <figure>
                 <img src={this.props.coverImg} />
-                <p>{this.props.title}</p>
-            </div>
+                <figcaption>{this.props.title}</figcaption>
+            </figure>
         );
     }
 }
