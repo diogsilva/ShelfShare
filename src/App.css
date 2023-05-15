@@ -42,3 +42,11 @@ html, body {
   background-color: #D9D9D9;
   border-radius: 25px;
 }
+
+.BookShelf-book-title {
+  font-family: 'Poppins';
+  /* font-weight: 300; */
+  text-align: center;
+  text-transform: uppercase;
+  /* padding-top: 15px */
+}

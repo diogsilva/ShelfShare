@@ -9,9 +9,9 @@ class BookShelfItem extends React.Component
     {
         //console.log("BookShelf Item props:", this.props);
         return(
-            <figure>
-                <img src={this.props.coverImg} />
-                <figcaption>{this.props.title}</figcaption>
+            <figure className="BookShelf-book">
+                <img src={this.props.coverImg} className="BookShelf-book-cover" />
+                <figcaption className="BookShelf-book-title">{this.props.title}</figcaption>
             </figure>
         );
     }
@@ -21,9 +21,9 @@ class BookShelf extends React.Component
 {
     render()
     {
-        //console.log("BookShelf props:", this.props)
+        console.log("BookShelf props:", this)
         return (
-            <Stack direction="horizontal" style={{overflow: "scroll"}}>
+            <Stack direction="horizontal" className="BookShelf-container" style={{overflow: "scroll"}}>
                 { this.props.books.map((book) => (
                     <div>
                         <BookShelfItem key={book.imageLink} coverImg={"/img/livros/" + book.imageLink} title={book.title} />
