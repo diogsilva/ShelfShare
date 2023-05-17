@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     background-color: bisque;
     
+    
   }
 .header{
     padding: 1%;
@@ -32,14 +33,3 @@ html, body {
     padding-bottom: 2%;
 }
 
-.name_user{
-    padding-top: 3%;
-    font-size:smaller;
-}
-.mens{
-    font-size: x-small;
-}
-.when_sended{
-    text-align: right;
-    font-size: x-small;
-}

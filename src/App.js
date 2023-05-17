@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter, Switch, Route} from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Navigation from "./Navigation";
 
@@ -17,9 +17,9 @@ import useToken from './Components/useToken';
 
 
 function App() {
-const { token, setToken } = useToken();
+  const { token, setToken } = useToken();
 
-    if(!token) {
+  if (!token) {
     return <Login setToken={setToken} />
   }
 
@@ -32,15 +32,18 @@ const { token, setToken } = useToken();
       <div>
         <BrowserRouter>
           <Navigation />
-          <Switch> 
+          <Switch>
+            <Route exact path="/">
+              <Redirect to="/home" />
+            </Route>
             <Route path="/home" component={Home} />
             <Route path="/search" component={Search} />
             <Route path="/sell" component={Sell} />
             <Route path="/messages" component={Notific} />
             <Route path="/profile" component={Profile} />
-          </Switch> 
+          </Switch>
         </BrowserRouter>
-    </div>
+      </div>
     </div>
   );
 }

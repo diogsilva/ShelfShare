@@ -49,7 +49,7 @@ const Navigation = (props) => {
               </NavItem>
               <NavItem>
                 <NavLink to="/messages" className="nav-link"style={{color:'white'}}>
-                <b>Massages </b>
+                <b>Messages </b>
                 </NavLink>
               </NavItem>
               <NavItem>
