@@ -4,30 +4,26 @@ html, body {
     background-color: bisque;
     
   }
+.body{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
 .header{
     padding: 1%;
 }
-.button_{
-    background-color: bisque;
-    padding: 3%;
-    color :black;
-    cursor : pointer;
-    border: none;
-    border-bottom: 1px solid black;
-    
-}
-
 .button_l{
     background-color: bisque;
+    border:none;
     padding: 3%;
     color :black;
     cursor : pointer;
-    border: none;
+    
     
 }
 .Msg_containers{
     background-color: bisque;
-    border: none;
+    border: 1px solid rgba(252, 249, 249, 0.411);
     padding-top: 1% ;
     padding-bottom: 2%;
 }

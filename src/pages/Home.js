@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Home.css";
 import {Form,FormControl,InputGroup,Container,Row,Col} from "react-bootstrap"
-import { Grid } from "@mui/material"
+import { Grid } from "@mui/material";
 import BookShelf from '../Components/BookShelf.js';
 
 const bookData = require("../sample/books.json");

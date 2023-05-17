@@ -1,15 +1,16 @@
-
 import React from "react";
 import {Container,Row,Col} from "react-bootstrap";
-
+import { Button } from '@mui/material';
+import {Link } from "react-router-dom";
 import './Notific.css';
 
 
 
 // Home Screen
-const Messages = (props) => {
+const Notification = (props) => {
 
   return (
+
     <div className='body'>
       <Container className='Msg_containers'>
         <Row>
@@ -26,7 +27,7 @@ const Messages = (props) => {
           </Col>
           <Col xs={7} className="name_user"> 
             <p><b>Tom Cruise </b></p>
-            <p className="mens">Irei enviar o livro ainda hoje por correio! </p>
+            <p className="mens">Irei enviar o livro ainda hoje por correio!asldkfsjgdhdjaskfd </p>
           </Col>
           <Col xs={1} className="when_sended"> Now</Col>
         </Row>
@@ -76,4 +77,4 @@ const Messages = (props) => {
   )
 };
 
-export default Messages;
+export default Notification;

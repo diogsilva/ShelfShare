@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import {Form,FormControl,InputGroup,Container,Row,Col} from "react-bootstrap"
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 
 import Navigation from "./Navigation";
 
@@ -9,11 +9,11 @@ import Navigation from "./Navigation";
 import Home from './pages/Home';
 import Search from './pages/Search';
 import Sell from './pages/Sell';
-import Messages from './pages/Messages';
 import Notific from './pages/Notific';
 import Profile from './pages/Profile';
 
 function App() {
+
   return (
     // -------------------------
     // BrowserRouter (uses regular URL. For example, /home or /search )
@@ -22,18 +22,21 @@ function App() {
     <div className="app">
       <div>
         <BrowserRouter>
-          <Navigation />
+          <Navigation/>
+          {/*<Home /> // dar set visibel and set invisible para não se repetir ao andar pelo nav
+          https://www.youtube.com/watch?v=UGSN6o29fPo 
+          em que o default é visivel e depois ao clicar n'outro button fica invisivel ao assim*/}
           <Switch> 
             <Route path="/home" component={Home} />
             <Route path="/search" component={Search} />
             <Route path="/sell" component={Sell} />
-            <Route path="/messages" component={Messages} />
+            <Route path="/messages" component={Notific} />
             <Route path="/profile" component={Profile} />
           </Switch> 
-          {/*<Route path="/messages" component={Notific} />*/}
-            {/*<Route path="/login" component={Login} />*/}
+         
+           
         </BrowserRouter>
-    </div>
+      </div>
       
      
       
