@@ -31,17 +31,17 @@ const Notific = (props) => {
       <BrowserRouter>
         <Container className="header" style={{textAlign:"center"}}>
           <Row>
-            <Col><Link to='/Messages'style={{textDecoration:'none'}}>
+            <Col><Link to='/messages'style={{textDecoration:'none'}}>
               <Button  style={{borderBottom: isActive ? "1px solid black" : "none"}} onClick={handleClick}><b className='button_l' >Messages </b></Button>
             </Link></Col>
-            <Col><Link to='/Notification' style={{textDecoration:'none'}}>
+            <Col><Link to='/notification' style={{textDecoration:'none'}}>
               <Button style={{borderBottom: isActivee ? "1px solid black" : "none"}} onClick={handleClickk}><b className='button_l'>Notifications</b></Button>
             </Link></Col>
           </Row>
         </Container>
         <Switch> 
-          <Route path="/Messages" component={Messages} />
-          <Route path="/Notification" component={Notification} />
+          <Route path="/messages" component={Messages} />
+          <Route path="/notification" component={Notification} />
           
         </Switch> 
       </BrowserRouter>

@@ -1,0 +1,45 @@
+.list-wrapper {
+    display: flex;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+label {
+    text-align: center;
+
+}
+
+
+.title-input {
+    display: flex;
+    width: 400px;
+    height: 50px;
+}
+
+.price-input {
+    display: flex;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+}
+
+.toggle--button {
+    border-radius: 10px;
+    height: 50px;
+    width: 400px;
+    background-color: #829fca;
+}
+
+.toggle--sell {
+    background-color: rgb(255, 122, 122);
+
+}
+
+.slider-sell {
+    width: 100px;
+}
