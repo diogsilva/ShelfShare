@@ -9,7 +9,7 @@ import { faSearch, faHome, faUserCircle, faAdd, faCommenting } from '@fortawesom
 const tabs = [{
   route: "/home",
   icon: faHome,
-  label: "cake_home"
+  label: "Home"
 },{
   route: "/search",
   icon: faSearch,
@@ -21,11 +21,11 @@ const tabs = [{
 },{
   route: "/messages", // nome da pahina em cima np link
   icon: faCommenting,
-  label: "messages"
+  label: "Messages"
 },{
   route: "/profile",
   icon: faUserCircle,
-  label: "profile"
+  label: "Profile"
 }]
 // ----- ate aqui -----
 const Navigation = (props) => {

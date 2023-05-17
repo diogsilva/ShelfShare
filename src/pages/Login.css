@@ -1,0 +1,33 @@
+
+.login-wrapper {
+    display: flex;
+    min-height: 80vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.log-in{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+  input{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color:bisque ;
+  }
+
+
+.button-login{
+    border: none;
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #494949;
+}
