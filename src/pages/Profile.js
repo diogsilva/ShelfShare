@@ -20,7 +20,7 @@ return (
         <Grid item><p>{antónio.username}</p></Grid>
     </Grid>
 
-    <Grid container className="section-body" colums={3}>
+    <Grid container className="section-body" columns={3}>
         <Grid item xs={1}><p className="profile-trade-counter">{antónio.booksSold}</p></Grid>
         <Divider orientation="vertical" flexItem />
         <Grid item xs={1}><p className="profile-trade-counter">{antónio.booksTraded}</p></Grid>
