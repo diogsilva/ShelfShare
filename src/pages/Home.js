@@ -26,7 +26,7 @@ const Home = (props) => {
       </Container>
       <Container className='grid'>
         <Row>
-          <Typography variant={'h4'} sx={{paddingBottom:"25px" ,fontFamily:'Poppins'} } >BOOKS RECOMENDED TO YOU: </Typography>
+          <Typography variant={'h4'} sx={{paddingBottom:"25px" ,fontFamily:'Poppins'} } >BOOKS RECOMMENDED FOR YOU: </Typography>
           <Col>
             <div className="section-body">
               <BookShelf books={bookData} picHeight={220} />
