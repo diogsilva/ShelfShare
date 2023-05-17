@@ -3,14 +3,33 @@ import { Stack } from '@mui/material';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
+import Dialog from '@mui/material/Dialog';
 import Slider from '@mui/material/Slider';
+import Alert from '@mui/material/Alert';
 import React, { useState } from 'react';
 import './Sell.css';
 
 export default function Sell() {
   const [state, setState] = useState(false);
   const [lang, setLang] = React.useState('EN');
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [timer, setTimer] = useState(null);
 
+  const handleOpen = () => {
+    setIsModalVisible(true);
+    setTimer(
+      setTimeout(() => {
+        setIsModalVisible(false);
+      }, 2000)
+    );
+  };
+
+  const handleClose = (reason) => {
+    if (reason === "escapeKeyDown" || reason === "backdropClick") {
+      setIsModalVisible(false);
+      timer && clearTimeout(timer);
+    }
+  };
   const handleChange = (event) => {
     setLang(event.target.value);
   };
@@ -19,6 +38,10 @@ export default function Sell() {
   }
   return (
     <div className='list-wrapper'>
+
+      <Dialog open={isModalVisible} onClose={handleClose}>
+        <Alert severity="success">You have listed a book!</Alert>
+      </Dialog>
       <Stack spacing={3}>
         <h1 className='list-item'>List a Book</h1>
         <label>
@@ -66,7 +89,7 @@ export default function Sell() {
         <Button variant="outlined" endIcon={<CloudUploadIcon />}>
           Upload Photos
         </Button>
-        <Button className='button-list-item' variant="contained" color="success">
+        <Button onClick={handleOpen} className='button-list-item' variant="contained" color="success">
           List Item
         </Button>
       </Stack>

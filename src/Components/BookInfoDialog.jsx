@@ -15,7 +15,6 @@ export default function BookInfoDialog({open,setOpen,bookInfo}) {
   return (
     <div>
       <Dialog
-      sx={{fontFamily: 'Poppins'}}
         open={open}
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
@@ -33,7 +32,7 @@ export default function BookInfoDialog({open,setOpen,bookInfo}) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Close</Button>
-          <Button variant='contained' color='success' onClick={handleClose} autoFocus>
+          <Button variant='contained' color='success' onClick={handleClose}>
             Make an Offer
           </Button>
         </DialogActions>
