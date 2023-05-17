@@ -2,6 +2,9 @@
     {
         "username": "AntonioMarques27",
         "jointime": 1656288000,
-        "email": "antonio@example.com"
+        "email": "antonio@example.com",
+        "booksSold": 7,
+        "booksTraded": 20,
+        "avgRating": 4.25
     }
 ]
