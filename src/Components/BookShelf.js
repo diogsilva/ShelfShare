@@ -25,9 +25,7 @@ class BookShelf extends React.Component
         return (
             <Stack direction="horizontal" className="BookShelf-container" style={{overflow: "scroll"}}>
                 { this.props.books.map((book) => (
-                    <div>
-                        <BookShelfItem key={book.imageLink} coverImg={"/img/livros/" + book.imageLink} title={book.title} picHeight={this.props.picHeight} />
-                    </div>
+                    <BookShelfItem key={book.imageLink} coverImg={"/img/livros/" + book.imageLink} title={book.title} picHeight={this.props.picHeight} />
                 ))}
             </Stack>
         );
