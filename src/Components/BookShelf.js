@@ -28,7 +28,7 @@ class BookShelf extends React.Component
         return (
             <Grid container maxHeight={'700px'} overflow={'auto'} spacing={2}>
                 { this.props.books.map((book) => (
-                        <BookShelfItem key={book.imageLink} coverImg={"/img/livros/" + book.imageLink} title={book.title} picHeight={this.props.picHeight} />
+                    <BookShelfItem key={book.imageLink} coverImg={"/img/livros/" + book.imageLink} title={book.title} picHeight={this.props.picHeight} />
                 ))}
             </Grid>
         );
