@@ -1,38 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Stack } from '@mui/material'
 import Grid from '@mui/material/Grid';
+import BookInfoDialog from './BookInfoDialog';
 
 // Um componente que implementa a "prateleira de livros" na página principal
 
-class BookShelfItem extends React.Component
-{
-    render()
-    {
-        //console.log("BookShelf Item props:", this.props);
-        return(
-            <Grid item alignItems={'center'} textAlign={"center"} xs={3}>
-            <figure className="BookShelf-book">
-                <img src={this.props.coverImg} className="BookShelf-book-cover" style={{height: this.props.picHeight}} />
-                <figcaption className="BookShelf-book-title">{this.props.title}</figcaption>
-            </figure>
-            </Grid>
-        );
-    }
+const BookShelfItem = ({ book,picHeight,handleClickOpen }) => {
+    const source = "/img/livros/" + book.imageLink;
+    //console.log("BookShelf Item props:", this.props);
+    return (
+        <Grid item alignItems={'center'} textAlign={"center"} xs={3}>
+            <div onClick={()=>handleClickOpen({...book,source})}>
+                <figure className="BookShelf-book">
+                    <img src={source} className="BookShelf-book-cover" style={{ height: picHeight }} />
+                    <figcaption className="BookShelf-book-title">{book.title}</figcaption>
+                </figure>
+            </div>
+        </Grid>
+    ); 
 }
 
-class BookShelf extends React.Component
-{
-    render()
-    {
-        console.log("BookShelf props:", this)
-        return (
-            <Grid container maxHeight={'700px'} overflow={'auto'} spacing={2}>
-                { this.props.books.map((book) => (
-                        <BookShelfItem key={book.imageLink} coverImg={"/img/livros/" + book.imageLink} title={book.title} picHeight={this.props.picHeight} />
-                ))}
-            </Grid>
-        );
-    }
+const BookShelf = (props) => {
+    const [bookInfo,setBookInfo] = useState({});
+    const [open, setOpen] = useState(false);
+    const handleClickOpen = (info) => {
+        setOpen(true);
+        setBookInfo(info);
+    };
+    return (<>
+        <BookInfoDialog bookInfo={bookInfo} open={open} setOpen={setOpen} />
+        <Grid container maxHeight={'700px'} overflow={'auto'} spacing={2}>
+            {props.books.map((book) => (
+                <BookShelfItem handleClickOpen={handleClickOpen} key={book.imageLink} book={book} picHeight={props.picHeight} />
+            ))}
+        </Grid>
+    </>
+
+    );
 }
 
 export default BookShelf;
