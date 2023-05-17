@@ -40,7 +40,7 @@ html, body {
 
 .section-body {
   background-color: #D9D9D9;
-  border-radius: 25px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .BookShelf-book-title {
