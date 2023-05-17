@@ -4,6 +4,7 @@ import { Form, FormControl, InputGroup, Container, Row, Col } from "react-bootst
 import { Grid, Typography } from "@mui/material";
 import BookShelf from '../Components/BookShelf.js';
 import SearchComponent from '../Components/SearchComponent';
+import { fontFamily } from '@mui/system';
 
 const bookData = require("../sample/books.json");
 
@@ -25,7 +26,7 @@ const Home = (props) => {
       </Container>
       <Container className='grid'>
         <Row>
-          <Typography variant={'h4'} sx={{paddingBottom:"25px"}} >BOOKS RECOMENDED TO YOU: </Typography>
+          <Typography variant={'h4'} sx={{paddingBottom:"25px" ,fontFamily:'Poppins'} } >BOOKS RECOMENDED TO YOU: </Typography>
           <Col>
             <div className="section-body">
               <BookShelf books={bookData} picHeight={220} />
@@ -35,7 +36,7 @@ const Home = (props) => {
         </Container>
         <Container className='grid'>
         <Row>
-          <Typography variant={'h4'} sx={{paddingBottom:"25px"}} >FAVORITE BOOKS IN SHOWCASE:</Typography>
+          <Typography variant={'h4'} sx={{paddingBottom:"25px" ,fontFamily:'Poppins'}} >FAVORITE BOOKS IN SHOWCASE:</Typography>
           <Col>
             <div className="section-body">
               <BookShelf books={bookData.slice(10,18)} picHeight={220} />
@@ -45,7 +46,7 @@ const Home = (props) => {
         </Container>
         <Container className='grid'>
         <Row>
-          <Typography variant={'h4'} sx={{paddingBottom:"25px"}} >TRADES THAT YOU MIGHT LIKE:</Typography>
+          <Typography variant={'h4'} sx={{paddingBottom:"25px" ,fontFamily:'Poppins'}} >TRADES THAT YOU MIGHT LIKE:</Typography>
           <Col>
             <div className="section-body">
               <BookShelf books={bookData.slice(31,39)} picHeight={220} />

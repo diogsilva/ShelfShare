@@ -35,7 +35,7 @@ const Navigation = (props) => {
       {/* -----------       TOP NavBar      ----------*/}
       <nav className="navbar navbar-expand-md navbar-light d-none d-lg-block sticky-top" role="navigation">
         <div className="container-fluid">
-            <a className="navbar-brand" href="/home" style={{color:'white'}}><h4>Shelf Share</h4></a>
+            <a className="navbar-brand" href="/home" style={{color:'white'}}><h4>ShelfShare</h4></a>
             <Nav className="ml-auto">
               <NavItem>
                 <NavLink to="/search" className="nav-link" style={{color:'white'}}>
