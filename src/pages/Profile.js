@@ -47,7 +47,8 @@ const Profile = (props) => {
        
             <h7 style={{ 
             fontFamily:'Poppins',
-            marginLeft: '90%', 
+            marginLeft: '85%', 
+            marginRight:'5%',
             marginTop: '-4px', 
             color:'black',
             width: '30%' 

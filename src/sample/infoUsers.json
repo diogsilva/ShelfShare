@@ -1,0 +1,62 @@
+[
+    {
+        "userName"      : "afonso8812",
+        "realName"      : "Afonso Costa",
+        "joinDate"      : "13 de Agosto de 2002",
+        "email"         : "afsc@hotmail.com",
+        "bio"           : "Como dizer que não a um bom piquenique na companhia de uma boa BD!!",
+        "avgRating"     : 3.5,
+        "booksSold:"    : 30,
+        "booksTraded"   : 333
+    },
+    {
+        "userName"      : "Dama_de_Copas",
+        "realName"      : "Andreia Damas",
+        "joinDate"      : "29 de Janeiro de 1998",
+        "email"         : "copaDama@hotmail.com",
+        "bio"           : "Adoro um bom livro de aventura com um pouco de romance afinal sou a dama de copas!",
+        "avgRating"     : 4,
+        "booksSold:"    : 69,
+        "booksTraded"   : 99
+    },
+    {
+        "userName"      : "April_fools",
+        "realName"      : "Vitor Almeida",
+        "joinDate"      : "1 de Abril de 2002",
+        "email"         : "VitorAprilFools@gmail.com",
+        "bio"           : "Adoro um bom livro!",
+        "avgRating"     : 2,
+        "booksSold:"    : 20,
+        "booksTraded"   : 10
+    },
+    {
+        "userName"      : "9183_sda",
+        "realName"      : "Ana Golveia",
+        "joinDate"      : "21 de Junho de 2020",
+        "email"         : "anagolv@gmail.com",
+        "bio"           : "não sei muito bem o que escrever aqui, alguem sabe de um licro que me possa inspirar a escrever uma boa bio?!",
+        "avgRating"     : 3,
+        "booksSold:"    : 100,
+        "booksTraded"   : 80
+    },
+    {
+        "userName"      : "hugoababa",
+        "realName"      : "hugo Faria",
+        "joinDate"      : "9 de setembro de 2018",
+        "email"         : "oQueFariaHugo@hotmail.com",
+        "bio"           : "um bom livro ou uma boa historia?",
+        "avgRating"     : 5,
+        "booksSold:"    : 170,
+        "booksTraded"   : 80
+    },
+    {
+        "userName"      : "lanadel",
+        "realName"      : "luana Salvador",
+        "joinDate"      : "17 de Dezembro de 2022",
+        "email"         : "luanajesus@hotmail.com",
+        "bio"           : "keep it nice and chille",
+        "avgRating"     : 5,
+        "booksSold:"    : 70,
+        "booksTraded"   : 100
+    }
+]
