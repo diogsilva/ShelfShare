@@ -6,7 +6,7 @@ import BookInfoDialog from './BookInfoDialog';
 // Um componente que implementa a "prateleira de livros" na página principal
 
 const BookShelfItem = ({ book,picHeight,handleClickOpen }) => {
-    const source = "../../public/img/livros/" + book.imageLink;
+    const source = "/img/livros/" + book.imageLink;
     //console.log("BookShelf Item props:", this.props);
     return (
         <Grid item alignItems={'center'} textAlign={"center"} xs={3}>
