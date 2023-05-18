@@ -7,7 +7,7 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import { Button } from '@mui/material';
 // Home Screen
 const Notific = (props) => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
   const [isActivee, setIsActivee] = useState(false);
 
   const handleClick = () => {

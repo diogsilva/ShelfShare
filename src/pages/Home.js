@@ -16,13 +16,13 @@ const Home = (props) => {
   return (
     <div className='comp'>
       <Container className="mt" >
-        <Row>
+    {/*<Row>
           <Col>
             <Form className="d">
               <SearchComponent value={value} onChange={handleChange} />
             </Form>
           </Col>
-        </Row>
+    </Row>*/}
       </Container>
       <Container className='grid'>
         <Row>
