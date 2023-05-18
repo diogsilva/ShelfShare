@@ -1,0 +1,62 @@
+[
+    {
+        "username": "AntonioMarques27",
+        "jointime": 1656288000,
+        "email": "antonio@example.com",
+        "booksSold": 7,
+        "booksTraded": 20,
+        "avgRating": 4.25,
+        "avatarImg": "/profiles/AntonioMarques27/avatar.jpg",
+        "bannerImg": "/profiles/AntonioMarques27/banner.jpg"
+    },
+    {
+        "userName": "bookworm",
+        "realName": "Marta Silva",
+        "joinDate": 1612137600,
+        "email": "marta.silva@gmail.com",
+        "bio": "Sou uma leitora ávida e adoro trocar livros com outras pessoas. Os meus géneros favoritos são ficção científica, fantasia e romance.",
+        "avgRating": 4.5,
+        "booksSold": 23,
+        "booksTraded": 47
+      },
+      {
+        "userName": "bibliophile",
+        "realName": "Pedro Costa",
+        "joinDate": 1619827200,
+        "email": "pedro.costa@hotmail.com",
+        "bio": "Tenho uma paixão por livros antigos e raros. Gosto de colecionar e vender livros que encontro em feiras e lojas de segunda mão.",
+        "avgRating": 4.2,
+        "booksSold": 56,
+        "booksTraded": 12
+      },
+      {
+        "userName": "booklover",
+        "realName": "Ana Santos",
+        "joinDate": 1620940800,
+        "email": "ana.santos@yahoo.com",
+        "bio": "Leio de tudo um pouco, desde clássicos a best-sellers. Estou sempre à procura de novas recomendações e opiniões sobre os livros que leio.",
+        "avgRating": 4.7,
+        "booksSold": 15,
+        "booksTraded": 32
+      },
+      {
+        "userName": "leitora_desiludida",
+        "realName": "Sofia Ribeiro",
+        "joinDate": 1623628800,
+        "email": "sofia.ribeiro@outlook.com",
+        "bio": "Não tenho tido sorte com os livros que compro ou troco nesta rede social. A maioria são aborrecidos ou mal escritos. Estou à espera de encontrar um livro que me surpreenda pela positiva.",
+        "avgRating": 2.3,
+        "booksSold": 8,
+        "booksTraded": 21
+      },
+      {
+        "userName": "joao_estudante",
+        "realName": "João Ferreira",
+        "joinDate": 1625097600,
+        "email": "joao.ferreira@estudante.pt",
+        "bio": "Sou um estudante universitário que adora ler os livros que os professores recomendam. Pena que eles custem os olhos da cara e eu não tenha dinheiro para os comprar. Por isso, recorro a esta rede social para tentar trocar os meus livros velhos por novos. Mas parece que ninguém quer os meus livros. Será que é porque são todos fotocópias?",
+        "avgRating": 3.1,
+        "booksSold": 2,
+        "booksTraded": 5
+      }
+]
