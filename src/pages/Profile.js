@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Divider, Rating } from "@mui/material";
-import UserAvatar from '../Components/UserAvatar.js'
+import UserAvatar from '../Components/UserAvatar.js';
+import UserBanner from '../Components/UserBanner.js';
 
 // Temporariamente só um user
 const antónio = require("../sample/users.json")[0];
@@ -12,7 +13,8 @@ const Profile = (props) => {
 
 return (
     <div>
-    <Grid container className="section-body" spacing={5} style={{backgroundImage: "url('" + antónio.bannerImg + "')"}}>
+    <UserBanner user={antónio} style={{height: 200, width: 200}}/>
+    <Grid container className="section-body" spacing={5}>
         <Grid item xs={1} />
         <Grid item><UserAvatar user={antónio} /></Grid>
         <Grid item><p>{antónio.username}</p></Grid>
