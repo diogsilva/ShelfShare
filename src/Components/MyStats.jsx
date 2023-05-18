@@ -18,27 +18,32 @@ const MyStats = () =>{
             marginLeft: '25%', 
             marginTop: '60px', 
             color:'black',
+            fontFamily:'Poppins',
             width: '30%' 
             }}>7</h1>
             <h1 style={{  
             marginTop: '5px', 
             marginLeft: '22%', 
             color:'black',
+            fontFamily:'Poppins',
             width: '30%' 
             }}>Traded</h1>
             <h1 style={{ 
             marginLeft: '75%', 
             marginTop: '-105px',
             color:'black', 
+            fontFamily:'Poppins',
             width: '30%' 
             }}>14</h1>
             <h1 style={{  
             marginTop: '0px', 
             marginLeft: '74%', 
+            fontFamily:'Poppins',
             color:'black',
             width: '30%' 
             }}>Sold</h1>
     </Box>
+
       ); 
 };
 

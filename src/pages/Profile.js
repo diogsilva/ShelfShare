@@ -6,6 +6,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import MyStats from '../Components/MyStats.jsx';
 import MyShelf from '../Components/MyShelf.jsx';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { InputAdornment } from '@mui/material';
+import Rating from '@mui/material/Rating';
 
 
 const Profile = (props) => {
@@ -20,29 +23,41 @@ const Profile = (props) => {
   return (
     <Stack spacing={2}>
       <div>
-        <Avatar sx={{ marginTop: '8px', position: 'absolute', height: '125px', width: '125px' }} alt="Remy Sharp" src="https://i.pinimg.com/originals/78/ae/ae/78aeae1093015be662b0aa45a10a3174.jpg" />
-        <Box
-          sx={{
-            width: "auto",
-            height: 100,
-            backgroundColor: '#E0E0E0',
-            '&:hover': {
-              backgroundColor: 'primary.main',
-              opacity: [0.9, 0.8, 0.7],
-            },
-          }}
-        />
-        <Box
-          sx={{
-            width: "auto",
-            height: 60,
-            backgroundColor: '#E0E0E0',
-            '&:hover': {
-              backgroundColor: 'primary.main',
-              opacity: [0.9, 0.8, 0.7],
-            },
-          }}
-        />
+        <Avatar sx={{ marginLeft:'15px',marginTop: '14px', position: 'absolute', height: '125px', width: '125px' }} alt="Remy Sharp" src="https://i.pinimg.com/originals/78/ae/ae/78aeae1093015be662b0aa45a10a3174.jpg" />
+        <Box color="white" 
+             bgcolor="#E0E0E0"
+             height={'100px'}
+             p={1}
+             display={'flex'}
+             flexDirection={'column'}>
+          </Box>
+          <Box color="white" 
+             bgcolor="#E0E0E0"
+             height={'80px'}
+             p={1}
+             display={'flex'}
+             flexDirection={'column'}>
+            <h2 style={{ 
+            fontFamily:'Poppins',
+            marginLeft: '10%', 
+            marginTop: '-25px', 
+            color:'black',
+            width: '30%' 
+            }}>AntonioMarques27</h2>
+       
+            <h7 style={{ 
+            fontFamily:'Poppins',
+            marginLeft: '90%', 
+            marginTop: '-4px', 
+            color:'black',
+            width: '30%' 
+            }}>Joined 24 Oct. 2014</h7>
+            <InputAdornment style={{marginLeft:'10%',marginTop:'-15px'}}>
+            <LocationOnIcon/> Portugal
+            </InputAdornment>
+            <Rating style={{marginLeft:'10px', marginTop:'9px'}} name="read-only" value={4} readOnly />
+
+          </Box>
 
         <Tabs  value={selectedTab} onChange={handleChange} centered>
         <Tab label="My Shelf" />
