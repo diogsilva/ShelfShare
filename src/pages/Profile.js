@@ -1,22 +1,20 @@
 import React from 'react';
-import { Grid, Avatar, Divider, Rating } from "@mui/material"
+import { Grid, Divider, Rating } from "@mui/material";
+import UserAvatar from '../Components/UserAvatar.js'
 
 // Temporariamente só um user
 const antónio = require("../sample/users.json")[0];
-const profilePath = "/profiles/" + antónio.username
-const avatarPath = profilePath + "/avatar.jpg";
-const bannerPath = profilePath + "/banner.jpg";
+const profilePath = "/profiles/" + antónio.userName
 
 console.log(antónio)
-console.log(avatarPath)
 
 const Profile = (props) => {
 
 return (
     <div>
-    <Grid container className="section-body" spacing={5} style={{backgroundImage: "url('" + bannerPath + "')"}}>
+    <Grid container className="section-body" spacing={5} style={{backgroundImage: "url('" + antónio.bannerImg + "')"}}>
         <Grid item xs={1} />
-        <Grid item><Avatar src={avatarPath} /></Grid>
+        <Grid item><UserAvatar user={antónio} /></Grid>
         <Grid item><p>{antónio.username}</p></Grid>
     </Grid>
 
