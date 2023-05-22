@@ -17,11 +17,12 @@ import useToken from './Components/useToken';
 
 
 function App() {
-  const { token, setToken } = useToken();
+  //login page connection
+    /*} const { token, setToken } = useToken();
 
   if (!token) {
     return <Login setToken={setToken} />
-  }
+  }*/
 
   return (
     // -------------------------

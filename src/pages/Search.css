@@ -5,16 +5,13 @@
 
 .Search-options{
     background-color: bisque;
-    padding-top: 5%;
-    
-   
-
+    padding-top: 0%;
 }
 .container-fluid{
     background-color: #fabe70 ;  
 }
 .mt{
-    padding-top: 3%;
+    padding-top: 2%;
     background-color: bisque;
 }
 .Search_a{
@@ -25,6 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 0%;
 }
+
 
