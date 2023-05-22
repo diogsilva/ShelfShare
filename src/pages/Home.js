@@ -16,7 +16,8 @@ const Home = (props) => {
   return (
     <div className='comp'>
       <Container className="mt" >
-    {/*<Row>
+    {/* serach bar need an update
+      <Row>
           <Col>
             <Form className="d">
               <SearchComponent value={value} onChange={handleChange} />

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Stack } from '@mui/material'
 import Grid from '@mui/material/Grid';
 import BookInfoDialog from './BookInfoDialog';
 
@@ -29,7 +28,7 @@ const BookShelf = (props) => {
     };
     return (<>
         <BookInfoDialog bookInfo={bookInfo} open={open} setOpen={setOpen} />
-        <Grid container maxHeight={'700px'} overflow={'auto'} spacing={2}>
+        <Grid container direction={'column'} maxHeight={'300px'} overflow={'auto'} spacing={3}>
             {props.books.map((book) => (
                 <BookShelfItem handleClickOpen={handleClickOpen} key={book.imageLink} book={book} picHeight={props.picHeight} />
             ))}
