@@ -38,7 +38,7 @@ const Home = (props) => {
         </Container>
         <Container className='grid'>
         <Row>
-          <Typography sx={{paddingBottom:"25px" ,fontFamily:'Poppins'}} >TRADES THAT YOU MIGHT LIKE:</Typography>
+          <Typography sx={{paddingBottom:"25px" ,fontFamily:'Poppins'}} ><b>TRADES THAT YOU MIGHT LIKE:</b></Typography>
           <Col>
             <div className="section-body">
               <BookShelf books={bookData.slice(31,39)} picHeight={220} />

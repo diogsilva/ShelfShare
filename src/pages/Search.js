@@ -27,7 +27,6 @@ const bookData = require("../sample/books.json");
 var filteredBooks = bookData;
 
 // Search Screen
-
 function filterBooks(query) {
   query = query.toLowerCase();
 
@@ -157,12 +156,12 @@ const Search = (props) => {
           <Col >
             <Form className="d" style={{ backgroundColor: 'white' }}>
               <SearchComponent value={value}  onChange={handleChange} />
-              {showfilters   ?
-              <Button fullWidth style={{ decoration : "none",backgroundColor: "bisque",color:"#494949",flexDirection:"row-reverse",align: "end"}} onClick={onClickk}> 
+            </Form>
+            {showfilters   ?
+              <Button classname="mt-b" style={{ decoration : "none",backgroundColor: "bisque",color:"#494949",paddingLeft:"95%"}} onClick={onClickk}> 
                 <CloseIcon />
               </Button> : null}
              
-            </Form>
           </Col>
         </Row>
       </Container>
