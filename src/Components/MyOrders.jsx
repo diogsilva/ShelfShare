@@ -30,7 +30,7 @@ const MyOrders = () => {
                             <Typography sx={{ fontFamily: 'Poppins' }} variant="h5"><b>À la recherche du temps persu</b></Typography>
                             <Typography sx={{ fontFamily: 'Poppins'}} ><b>About:</b></Typography>
 
-                            <Typography sx={{ fontFamily: 'Poppins', paddingTop: "1%" }} ><b>Type:</b>Trade </Typography>
+                            <Typography sx={{ fontFamily: 'Poppins', paddingTop: "1%" }} ><b>Type:</b>Sell </Typography>
                             <Typography sx={{ fontFamily: 'Poppins' }} ><b>Price:</b> 29.99$</Typography>
                             <Typography sx={{ fontFamily: 'Poppins' }} ><b>Condition:</b>Good Shape </Typography>
                             <Typography sx={{ fontFamily: 'Poppins' }} variant="h5"><b>Status:</b>Completed </Typography>
