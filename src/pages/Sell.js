@@ -28,7 +28,7 @@ export default function Sell() {
     }
 
     setOpen(false);
-  }; 
+  };
 
   const handleChange = (event) => {
     setLang(event.target.value);
@@ -38,8 +38,7 @@ export default function Sell() {
   }
   return (
     <div className='list-wrapper'>
-
-<Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
           You have listed a book!
         </Alert>

@@ -3,14 +3,11 @@ import './Navegation.css';
 import { Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faHome, faUserCircle, faAdd, faBell ,faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUserCircle, faBell ,faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Settings from '@mui/icons-material/Settings';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 // esta parte é para quando o site for aberto em tablet ou telemovel parecer uma app
 // faz o upload dos icons do menu
 const tabs = [{
@@ -62,11 +59,11 @@ const Navigation = (props) => {
                 <AccountCircleIcon fontSize="large" />
               </NavLink>
             </NavItem>
-            <NavItem>
+            {/*<NavItem>
               <NavLink to="/Settings" className="nav-link" style={{ color: 'white' }}>
                 <Settings fontSize="large" />
               </NavLink>
-            </NavItem>
+            </NavItem>*/}
           </Nav>
         </div>
       </nav>

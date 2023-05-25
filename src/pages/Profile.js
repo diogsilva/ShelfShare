@@ -13,7 +13,7 @@ import MyStats from '../Components/MyStats.jsx';
 
 const Profile = (props) => {
 
-  const [selectedTab, setSelectedTab] = useState();
+  const [selectedTab, setSelectedTab] = useState(0);
 
 
   const handleChange = (event, selectedTab) => {
@@ -63,7 +63,7 @@ const Profile = (props) => {
         <Tabs value={selectedTab} onChange={handleChange} centered>
           <Tab label="My Shelf" />
           <Tab label="My Stats" />
-          <Tab label="My orders" disabled />
+          <Tab label="My orders"/>
         </Tabs>
         {selectedTab === 0 && <MyShelf />}
         {selectedTab === 1 && <MyStats />}
@@ -75,38 +75,3 @@ const Profile = (props) => {
 };
 
 export default Profile;
-
-
-
-/*
-// Temporariamente só um user
-const antónio = require("../sample/users.json")[0];
-const profilePath = "/profiles/" + antónio.userName
-
-console.log(antónio)
-
-const Profile = (props) => {
-
-return (
-    <div>
-    <UserBanner user={antónio} style={{height: 200, width: 200}}/>
-    <Grid container className="section-body" spacing={5}>
-        <Grid item xs={1} />
-        <Grid item><UserAvatar user={antónio} /></Grid>
-        <Grid item><p>{antónio.username}</p></Grid>
-    </Grid>
-
-    <Grid container className="section-body" columns={3}>
-        <Grid item xs={1}><p className="profile-trade-counter">{antónio.booksSold}</p></Grid>
-        <Divider orientation="vertical" flexItem />
-        <Grid item xs={1}><p className="profile-trade-counter">{antónio.booksTraded}</p></Grid>
-        <Divider orientation="vertical" flexItem></Divider>
-    </Grid>
-
-    <Rating value={antónio.avgRating} precision={1/2} size="large" readOnly />
-    </div>
-)
-};
-
-export default Profile; 
-*/
