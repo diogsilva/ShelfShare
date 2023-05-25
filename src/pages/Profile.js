@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 import { Stack } from 'react-bootstrap';
 import MyShelf from '../Components/MyShelf.jsx';
 import MyStats from '../Components/MyStats.jsx';
+import MyOrders from '../Components/MyOrders.jsx';
 
 
 const Profile = (props) => {
@@ -63,10 +64,11 @@ const Profile = (props) => {
         <Tabs value={selectedTab} onChange={handleChange} centered>
           <Tab label="My Shelf" />
           <Tab label="My Stats" />
-          <Tab label="My orders"/>
+          <Tab label="My Orders"/>
         </Tabs>
         {selectedTab === 0 && <MyShelf />}
         {selectedTab === 1 && <MyStats />}
+        {selectedTab === 2 && <MyOrders />}
 
       </div>
     </Stack>
